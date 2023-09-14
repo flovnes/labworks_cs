@@ -1,0 +1,14 @@
+C:\4\cute_gang\homework\cs\homework_one\obj\Debug\net7.0\homework_one.GeneratedMSBuildEditorConfig.editorconfig
+C:\4\cute_gang\homework\cs\homework_one\obj\Debug\net7.0\homework_one.AssemblyInfoInputs.cache
+C:\4\cute_gang\homework\cs\homework_one\obj\Debug\net7.0\homework_one.AssemblyInfo.cs
+C:\4\cute_gang\homework\cs\homework_one\obj\Debug\net7.0\homework_one.csproj.CoreCompileInputs.cache
+C:\4\cute_gang\homework\cs\homework_one\bin\Debug\net7.0\homework_one.exe
+C:\4\cute_gang\homework\cs\homework_one\bin\Debug\net7.0\homework_one.deps.json
+C:\4\cute_gang\homework\cs\homework_one\bin\Debug\net7.0\homework_one.runtimeconfig.json
+C:\4\cute_gang\homework\cs\homework_one\bin\Debug\net7.0\homework_one.dll
+C:\4\cute_gang\homework\cs\homework_one\bin\Debug\net7.0\homework_one.pdb
+C:\4\cute_gang\homework\cs\homework_one\obj\Debug\net7.0\homework_one.dll
+C:\4\cute_gang\homework\cs\homework_one\obj\Debug\net7.0\refint\homework_one.dll
+C:\4\cute_gang\homework\cs\homework_one\obj\Debug\net7.0\homework_one.pdb
+C:\4\cute_gang\homework\cs\homework_one\obj\Debug\net7.0\homework_one.genruntimeconfig.cache
+C:\4\cute_gang\homework\cs\homework_one\obj\Debug\net7.0\ref\homework_one.dll

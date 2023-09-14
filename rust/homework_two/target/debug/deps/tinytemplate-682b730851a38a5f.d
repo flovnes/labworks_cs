@@ -1,0 +1,10 @@
+C:\4\cute_gang\homework\rust\homework_two\target\debug\deps\tinytemplate-682b730851a38a5f.rmeta: C:\Users\Nick\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinytemplate-1.2.1\src\lib.rs C:\Users\Nick\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinytemplate-1.2.1\src\compiler.rs C:\Users\Nick\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinytemplate-1.2.1\src\error.rs C:\Users\Nick\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinytemplate-1.2.1\src\instruction.rs C:\Users\Nick\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinytemplate-1.2.1\src\syntax.rs C:\Users\Nick\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinytemplate-1.2.1\src\template.rs
+
+C:\4\cute_gang\homework\rust\homework_two\target\debug\deps\tinytemplate-682b730851a38a5f.d: C:\Users\Nick\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinytemplate-1.2.1\src\lib.rs C:\Users\Nick\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinytemplate-1.2.1\src\compiler.rs C:\Users\Nick\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinytemplate-1.2.1\src\error.rs C:\Users\Nick\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinytemplate-1.2.1\src\instruction.rs C:\Users\Nick\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinytemplate-1.2.1\src\syntax.rs C:\Users\Nick\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinytemplate-1.2.1\src\template.rs
+
+C:\Users\Nick\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinytemplate-1.2.1\src\lib.rs:
+C:\Users\Nick\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinytemplate-1.2.1\src\compiler.rs:
+C:\Users\Nick\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinytemplate-1.2.1\src\error.rs:
+C:\Users\Nick\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinytemplate-1.2.1\src\instruction.rs:
+C:\Users\Nick\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinytemplate-1.2.1\src\syntax.rs:
+C:\Users\Nick\.cargo\registry\src\index.crates.io-6f17d22bba15001f\tinytemplate-1.2.1\src\template.rs:

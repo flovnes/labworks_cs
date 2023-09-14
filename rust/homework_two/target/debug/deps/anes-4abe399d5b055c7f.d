@@ -1,0 +1,12 @@
+C:\4\cute_gang\homework\rust\homework_two\target\debug\deps\anes-4abe399d5b055c7f.rmeta: C:\Users\Nick\.cargo\registry\src\index.crates.io-6f17d22bba15001f\anes-0.1.6\src\lib.rs C:\Users\Nick\.cargo\registry\src\index.crates.io-6f17d22bba15001f\anes-0.1.6\src\macros.rs C:\Users\Nick\.cargo\registry\src\index.crates.io-6f17d22bba15001f\anes-0.1.6\src\sequences.rs C:\Users\Nick\.cargo\registry\src\index.crates.io-6f17d22bba15001f\anes-0.1.6\src\sequences\attribute.rs C:\Users\Nick\.cargo\registry\src\index.crates.io-6f17d22bba15001f\anes-0.1.6\src\sequences\buffer.rs C:\Users\Nick\.cargo\registry\src\index.crates.io-6f17d22bba15001f\anes-0.1.6\src\sequences\color.rs C:\Users\Nick\.cargo\registry\src\index.crates.io-6f17d22bba15001f\anes-0.1.6\src\sequences\cursor.rs C:\Users\Nick\.cargo\registry\src\index.crates.io-6f17d22bba15001f\anes-0.1.6\src\sequences\terminal.rs
+
+C:\4\cute_gang\homework\rust\homework_two\target\debug\deps\anes-4abe399d5b055c7f.d: C:\Users\Nick\.cargo\registry\src\index.crates.io-6f17d22bba15001f\anes-0.1.6\src\lib.rs C:\Users\Nick\.cargo\registry\src\index.crates.io-6f17d22bba15001f\anes-0.1.6\src\macros.rs C:\Users\Nick\.cargo\registry\src\index.crates.io-6f17d22bba15001f\anes-0.1.6\src\sequences.rs C:\Users\Nick\.cargo\registry\src\index.crates.io-6f17d22bba15001f\anes-0.1.6\src\sequences\attribute.rs C:\Users\Nick\.cargo\registry\src\index.crates.io-6f17d22bba15001f\anes-0.1.6\src\sequences\buffer.rs C:\Users\Nick\.cargo\registry\src\index.crates.io-6f17d22bba15001f\anes-0.1.6\src\sequences\color.rs C:\Users\Nick\.cargo\registry\src\index.crates.io-6f17d22bba15001f\anes-0.1.6\src\sequences\cursor.rs C:\Users\Nick\.cargo\registry\src\index.crates.io-6f17d22bba15001f\anes-0.1.6\src\sequences\terminal.rs
+
+C:\Users\Nick\.cargo\registry\src\index.crates.io-6f17d22bba15001f\anes-0.1.6\src\lib.rs:
+C:\Users\Nick\.cargo\registry\src\index.crates.io-6f17d22bba15001f\anes-0.1.6\src\macros.rs:
+C:\Users\Nick\.cargo\registry\src\index.crates.io-6f17d22bba15001f\anes-0.1.6\src\sequences.rs:
+C:\Users\Nick\.cargo\registry\src\index.crates.io-6f17d22bba15001f\anes-0.1.6\src\sequences\attribute.rs:
+C:\Users\Nick\.cargo\registry\src\index.crates.io-6f17d22bba15001f\anes-0.1.6\src\sequences\buffer.rs:
+C:\Users\Nick\.cargo\registry\src\index.crates.io-6f17d22bba15001f\anes-0.1.6\src\sequences\color.rs:
+C:\Users\Nick\.cargo\registry\src\index.crates.io-6f17d22bba15001f\anes-0.1.6\src\sequences\cursor.rs:
+C:\Users\Nick\.cargo\registry\src\index.crates.io-6f17d22bba15001f\anes-0.1.6\src\sequences\terminal.rs:
