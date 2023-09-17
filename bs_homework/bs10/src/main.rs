@@ -14,7 +14,7 @@ fn input_coordinates() -> (f32,f32,f32,f32) {
     let mut input_line = String::new();
     let _ = io::stdin().read_line(&mut input_line);
     let values: Vec<f32> = input_line
-    .split_whitespace()
+        .split_whitespace()
         .map(|q| q.parse().unwrap())
         .collect();
     (values[0], values[1], values[2], values[3])

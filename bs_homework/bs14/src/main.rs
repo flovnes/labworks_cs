@@ -21,6 +21,6 @@ fn input_values() -> (f32,f32,f32) {
 
 fn solution(values: (f32,f32,f32)) -> f32 {
     let (hour, min, sec) = values;
-    let sum = hour*30.+min/2.+sec/12.;
+    let sum = hour*30.+min/2.+sec/120.;
     if sum < 360. {sum} else {(360.-sum).abs()}
 }

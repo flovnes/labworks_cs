@@ -17,6 +17,7 @@ fn input_values() -> Team {
     let mut input_line = String::new();
     let _ = io::stdin().read_line(&mut input_line);
     team.name = String::from(input_line.trim().clone());
+    
     input_line.clear();
     let _ = io::stdin().read_line(&mut input_line);
     team.score = String::from(input_line.trim().clone());
