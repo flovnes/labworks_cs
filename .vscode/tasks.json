@@ -36,6 +36,18 @@
                 "${workspaceFolder}/cs/homework_two_cs/cs.sln"
             ],
             "problemMatcher": "$msCompile"
+        },
+        {
+            "type": "cargo",
+            "command": "build",
+            "problemMatcher": [
+                "$rustc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "label": "rust: cargo build"
         }
     ]
 }

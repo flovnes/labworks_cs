@@ -31,7 +31,7 @@ fn solution(team_l: Team, team_r: Team) {
         spaces_str = format!("{spaces_str}{}", " ");
         spaces -= 1;
     }
-    spaces = (12 - team_l.name.len()) as usize;
+    spaces = (12 - team_l.score.len()) as usize;
     while spaces > 0 {
         spaces_scr = format!("{spaces_scr}{}", " ");
         spaces -= 1;
