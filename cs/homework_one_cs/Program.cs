@@ -1,13 +1,9 @@
 ﻿using System;
-
-namespace homework_two
+class Program
 {
-    class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            float input = float.Parse(Console.ReadLine());
-            System.Console.WriteLine($"{Math.Acos(input+Math.Pow(input,2))}");
-        } 
-    }
+        float input = float.Parse(Console.ReadLine());
+        System.Console.WriteLine($"{Math.Acos(input+Math.Pow(input,2))}");
+    } 
 }
