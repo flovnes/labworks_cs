@@ -1,0 +1,14 @@
+C:\4\cute_gang\homework\cs\qbit_homework\qbit28\obj\Debug\net7.0\qbit28.GeneratedMSBuildEditorConfig.editorconfig
+C:\4\cute_gang\homework\cs\qbit_homework\qbit28\obj\Debug\net7.0\qbit28.AssemblyInfoInputs.cache
+C:\4\cute_gang\homework\cs\qbit_homework\qbit28\obj\Debug\net7.0\qbit28.AssemblyInfo.cs
+C:\4\cute_gang\homework\cs\qbit_homework\qbit28\obj\Debug\net7.0\qbit28.csproj.CoreCompileInputs.cache
+C:\4\cute_gang\homework\cs\qbit_homework\qbit28\bin\Debug\net7.0\qbit28.exe
+C:\4\cute_gang\homework\cs\qbit_homework\qbit28\bin\Debug\net7.0\qbit28.deps.json
+C:\4\cute_gang\homework\cs\qbit_homework\qbit28\bin\Debug\net7.0\qbit28.runtimeconfig.json
+C:\4\cute_gang\homework\cs\qbit_homework\qbit28\bin\Debug\net7.0\qbit28.dll
+C:\4\cute_gang\homework\cs\qbit_homework\qbit28\bin\Debug\net7.0\qbit28.pdb
+C:\4\cute_gang\homework\cs\qbit_homework\qbit28\obj\Debug\net7.0\qbit28.dll
+C:\4\cute_gang\homework\cs\qbit_homework\qbit28\obj\Debug\net7.0\refint\qbit28.dll
+C:\4\cute_gang\homework\cs\qbit_homework\qbit28\obj\Debug\net7.0\qbit28.pdb
+C:\4\cute_gang\homework\cs\qbit_homework\qbit28\obj\Debug\net7.0\qbit28.genruntimeconfig.cache
+C:\4\cute_gang\homework\cs\qbit_homework\qbit28\obj\Debug\net7.0\ref\qbit28.dll

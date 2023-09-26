@@ -1,0 +1,14 @@
+C:\4\cute_gang\homework\cs\qbit_homework\qbit9\bin\Debug\net7.0\qbit9.exe
+C:\4\cute_gang\homework\cs\qbit_homework\qbit9\bin\Debug\net7.0\qbit9.deps.json
+C:\4\cute_gang\homework\cs\qbit_homework\qbit9\bin\Debug\net7.0\qbit9.runtimeconfig.json
+C:\4\cute_gang\homework\cs\qbit_homework\qbit9\bin\Debug\net7.0\qbit9.dll
+C:\4\cute_gang\homework\cs\qbit_homework\qbit9\bin\Debug\net7.0\qbit9.pdb
+C:\4\cute_gang\homework\cs\qbit_homework\qbit9\obj\Debug\net7.0\qbit9.GeneratedMSBuildEditorConfig.editorconfig
+C:\4\cute_gang\homework\cs\qbit_homework\qbit9\obj\Debug\net7.0\qbit9.AssemblyInfoInputs.cache
+C:\4\cute_gang\homework\cs\qbit_homework\qbit9\obj\Debug\net7.0\qbit9.AssemblyInfo.cs
+C:\4\cute_gang\homework\cs\qbit_homework\qbit9\obj\Debug\net7.0\qbit9.csproj.CoreCompileInputs.cache
+C:\4\cute_gang\homework\cs\qbit_homework\qbit9\obj\Debug\net7.0\qbit9.dll
+C:\4\cute_gang\homework\cs\qbit_homework\qbit9\obj\Debug\net7.0\refint\qbit9.dll
+C:\4\cute_gang\homework\cs\qbit_homework\qbit9\obj\Debug\net7.0\qbit9.pdb
+C:\4\cute_gang\homework\cs\qbit_homework\qbit9\obj\Debug\net7.0\qbit9.genruntimeconfig.cache
+C:\4\cute_gang\homework\cs\qbit_homework\qbit9\obj\Debug\net7.0\ref\qbit9.dll

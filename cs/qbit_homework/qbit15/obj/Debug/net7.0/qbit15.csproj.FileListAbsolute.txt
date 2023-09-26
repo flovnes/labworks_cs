@@ -1,0 +1,14 @@
+C:\4\cute_gang\homework\cs\qbit_homework\qbit15\obj\Debug\net7.0\qbit15.GeneratedMSBuildEditorConfig.editorconfig
+C:\4\cute_gang\homework\cs\qbit_homework\qbit15\obj\Debug\net7.0\qbit15.AssemblyInfoInputs.cache
+C:\4\cute_gang\homework\cs\qbit_homework\qbit15\obj\Debug\net7.0\qbit15.AssemblyInfo.cs
+C:\4\cute_gang\homework\cs\qbit_homework\qbit15\obj\Debug\net7.0\qbit15.csproj.CoreCompileInputs.cache
+C:\4\cute_gang\homework\cs\qbit_homework\qbit15\bin\Debug\net7.0\qbit15.exe
+C:\4\cute_gang\homework\cs\qbit_homework\qbit15\bin\Debug\net7.0\qbit15.deps.json
+C:\4\cute_gang\homework\cs\qbit_homework\qbit15\bin\Debug\net7.0\qbit15.runtimeconfig.json
+C:\4\cute_gang\homework\cs\qbit_homework\qbit15\bin\Debug\net7.0\qbit15.dll
+C:\4\cute_gang\homework\cs\qbit_homework\qbit15\bin\Debug\net7.0\qbit15.pdb
+C:\4\cute_gang\homework\cs\qbit_homework\qbit15\obj\Debug\net7.0\qbit15.dll
+C:\4\cute_gang\homework\cs\qbit_homework\qbit15\obj\Debug\net7.0\refint\qbit15.dll
+C:\4\cute_gang\homework\cs\qbit_homework\qbit15\obj\Debug\net7.0\qbit15.pdb
+C:\4\cute_gang\homework\cs\qbit_homework\qbit15\obj\Debug\net7.0\qbit15.genruntimeconfig.cache
+C:\4\cute_gang\homework\cs\qbit_homework\qbit15\obj\Debug\net7.0\ref\qbit15.dll

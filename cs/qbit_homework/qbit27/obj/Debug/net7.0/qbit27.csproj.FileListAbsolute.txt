@@ -1,0 +1,14 @@
+C:\4\cute_gang\homework\cs\qbit_homework\qbit27\obj\Debug\net7.0\qbit27.GeneratedMSBuildEditorConfig.editorconfig
+C:\4\cute_gang\homework\cs\qbit_homework\qbit27\obj\Debug\net7.0\qbit27.AssemblyInfoInputs.cache
+C:\4\cute_gang\homework\cs\qbit_homework\qbit27\obj\Debug\net7.0\qbit27.AssemblyInfo.cs
+C:\4\cute_gang\homework\cs\qbit_homework\qbit27\obj\Debug\net7.0\qbit27.csproj.CoreCompileInputs.cache
+C:\4\cute_gang\homework\cs\qbit_homework\qbit27\bin\Debug\net7.0\qbit27.exe
+C:\4\cute_gang\homework\cs\qbit_homework\qbit27\bin\Debug\net7.0\qbit27.deps.json
+C:\4\cute_gang\homework\cs\qbit_homework\qbit27\bin\Debug\net7.0\qbit27.runtimeconfig.json
+C:\4\cute_gang\homework\cs\qbit_homework\qbit27\bin\Debug\net7.0\qbit27.dll
+C:\4\cute_gang\homework\cs\qbit_homework\qbit27\bin\Debug\net7.0\qbit27.pdb
+C:\4\cute_gang\homework\cs\qbit_homework\qbit27\obj\Debug\net7.0\qbit27.dll
+C:\4\cute_gang\homework\cs\qbit_homework\qbit27\obj\Debug\net7.0\refint\qbit27.dll
+C:\4\cute_gang\homework\cs\qbit_homework\qbit27\obj\Debug\net7.0\qbit27.pdb
+C:\4\cute_gang\homework\cs\qbit_homework\qbit27\obj\Debug\net7.0\qbit27.genruntimeconfig.cache
+C:\4\cute_gang\homework\cs\qbit_homework\qbit27\obj\Debug\net7.0\ref\qbit27.dll

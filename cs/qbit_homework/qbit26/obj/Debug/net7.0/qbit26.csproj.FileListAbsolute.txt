@@ -1,0 +1,14 @@
+C:\4\cute_gang\homework\cs\qbit_homework\qbit26\bin\Debug\net7.0\qbit26.exe
+C:\4\cute_gang\homework\cs\qbit_homework\qbit26\bin\Debug\net7.0\qbit26.deps.json
+C:\4\cute_gang\homework\cs\qbit_homework\qbit26\bin\Debug\net7.0\qbit26.runtimeconfig.json
+C:\4\cute_gang\homework\cs\qbit_homework\qbit26\bin\Debug\net7.0\qbit26.dll
+C:\4\cute_gang\homework\cs\qbit_homework\qbit26\bin\Debug\net7.0\qbit26.pdb
+C:\4\cute_gang\homework\cs\qbit_homework\qbit26\obj\Debug\net7.0\qbit26.GeneratedMSBuildEditorConfig.editorconfig
+C:\4\cute_gang\homework\cs\qbit_homework\qbit26\obj\Debug\net7.0\qbit26.AssemblyInfoInputs.cache
+C:\4\cute_gang\homework\cs\qbit_homework\qbit26\obj\Debug\net7.0\qbit26.AssemblyInfo.cs
+C:\4\cute_gang\homework\cs\qbit_homework\qbit26\obj\Debug\net7.0\qbit26.csproj.CoreCompileInputs.cache
+C:\4\cute_gang\homework\cs\qbit_homework\qbit26\obj\Debug\net7.0\qbit26.dll
+C:\4\cute_gang\homework\cs\qbit_homework\qbit26\obj\Debug\net7.0\refint\qbit26.dll
+C:\4\cute_gang\homework\cs\qbit_homework\qbit26\obj\Debug\net7.0\qbit26.pdb
+C:\4\cute_gang\homework\cs\qbit_homework\qbit26\obj\Debug\net7.0\qbit26.genruntimeconfig.cache
+C:\4\cute_gang\homework\cs\qbit_homework\qbit26\obj\Debug\net7.0\ref\qbit26.dll

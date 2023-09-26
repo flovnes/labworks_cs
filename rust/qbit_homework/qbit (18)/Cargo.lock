@@ -3,5 +3,5 @@
 version = 3
 
 [[package]]
-name = "bs5"
+name = "bs16"
 version = "0.1.0"
