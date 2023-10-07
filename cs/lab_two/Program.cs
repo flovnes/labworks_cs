@@ -82,11 +82,11 @@ namespace LabTwo {
             double x = double.Parse(Console.ReadLine());
             Console.WriteLine("[3 in ] Введення N");
             int n = int.Parse(Console.ReadLine());
-            double current_sin = Math.Sin((n-1)*x + Math.Pow(-1, 1+(n%3/2))*Math.Sin(x*n));
-            n--;
-            if (n!=0) {
-                for (int i = n-1; i > 0; i--) {
-                    double negative_if_divisible = Math.Pow(-1, 1 + ((i+1) %3 /2));
+            double negative_if_divisible = Math.Pow(-1, 2 - ((n+2)%3/2));
+            double current_sin = Math.Sin((n-1)*x + negative_if_divisible*Math.Sin(x*n));
+            if (n > 1) {
+                for (int i = n-2; i > 0; i--) {
+                    negative_if_divisible = (int)Math.Pow(-1, 2 - (i%3/2));
                     current_sin = Math.Sin(i*x + negative_if_divisible * Math.Sin(current_sin));
                 }
             }
