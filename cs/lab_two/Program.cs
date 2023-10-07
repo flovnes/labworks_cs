@@ -5,10 +5,6 @@ using System.Globalization;
         
 namespace LabTwo {
     class Program {
-        /* 
-        17. Дана послідовність з n цілих чисел.
-        Визначити, яких чисел в цій послідовності більше: додатних чи від’ємних.
-        */
         static void block_1() {
             Console.WriteLine("[1 in ] Кількість елементів");
             int n = int.Parse(Console.ReadLine());
@@ -20,9 +16,6 @@ namespace LabTwo {
                     count++;
                 } else if (num < 0) {
                     count--;
-                } else {
-                    // why is there a 0
-                    // do_nothing()
                 }
             }
             if (count > 0) {
@@ -36,10 +29,6 @@ namespace LabTwo {
                 Console.WriteLine();
             }
         }
-        /* 
-        29. Дана послідовність цілих чисел, за якою слідує 0.
-        Знайти кількість непарних елементів цієї послідовності.
-        */
         static void block_2() {
             int count = 0, num;
             Console.WriteLine("[2 in ] Введення елементів");
@@ -73,17 +62,13 @@ namespace LabTwo {
                     break;
             }            
         }
-        /*  
-        61. S = sin(x + sin(2x −sin(3x + sin(4x + sin(5x − sin(6x + sin )...) до sin(nx) включно.
-        На кожні три рази двічі відбувається додавання, один раз віднімання);
-        */ 
         static void block_3() {
             Console.WriteLine("[3 in ] Введення X");
             double x = double.Parse(Console.ReadLine());
             Console.WriteLine("[3 in ] Введення N");
             int n = int.Parse(Console.ReadLine());
             double negative_if_divisible = Math.Pow(-1, 2 - ((n+2)%3/2));
-            double current_sin = Math.Sin((n-1)*x + negative_if_divisible*Math.Sin(x*n));
+            double current_sin = Math.Sin((n-1)*x + negative_if_divisible * Math.Sin(x*n));
             if (n > 1) {
                 for (int i = n-2; i > 0; i--) {
                     negative_if_divisible = (int)Math.Pow(-1, 2 - (i%3/2));
