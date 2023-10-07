@@ -78,31 +78,23 @@ namespace LabTwo {
         На кожні три рази двічі відбувається додавання, один раз віднімання);
         */ 
         static void block_3() {
-            //     2        3        4
-            // sin(x + sin(2x + sin(3x + sin(4x))))
-
             Console.WriteLine("[3 in ] Введення X");
             double x = double.Parse(Console.ReadLine());
             Console.WriteLine("[3 in ] Введення N");
             int n = int.Parse(Console.ReadLine());
-            
             double current_sin = Math.Sin((n-1)*x + Math.Pow(-1, 1+(n%3/2))*Math.Sin(x*n));
             n--;
-            for (int i = n-1; i > 0; i--) {
-                // if ((i+1)%3 == 0) {
-                //     current_sin = Math.Sin(i*x - Math.Sin(current_sin));
-                // } else {
-                //     current_sin = Math.Sin(i*x + Math.Sin(current_sin)); 
-                // }
-                double negative_if_divisible = Math.Pow(-1, 1 + ((i+1) %3 /2));
-                current_sin = Math.Sin(i*x + negative_if_divisible * Math.Sin(current_sin));
+            if (n!=0) {
+                for (int i = n-1; i > 0; i--) {
+                    double negative_if_divisible = Math.Pow(-1, 1 + ((i+1) %3 /2));
+                    current_sin = Math.Sin(i*x + negative_if_divisible * Math.Sin(current_sin));
+                }
             }
             Console.WriteLine($"[3 out] {current_sin}");
             Console.WriteLine();
         }
 
-        static void Main(string[] args)
-        {
+        static void Main(string[] args) {
             Console.OutputEncoding = Encoding.UTF8;
             Thread.CurrentThread.CurrentCulture = new CultureInfo("en-US");
             int choice;
