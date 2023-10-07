@@ -1,0 +1,14 @@
+C:\4\cute_gang\homework\cs\lab_two\obj\Debug\net7.0\lab_two.GeneratedMSBuildEditorConfig.editorconfig
+C:\4\cute_gang\homework\cs\lab_two\obj\Debug\net7.0\lab_two.AssemblyInfoInputs.cache
+C:\4\cute_gang\homework\cs\lab_two\obj\Debug\net7.0\lab_two.AssemblyInfo.cs
+C:\4\cute_gang\homework\cs\lab_two\obj\Debug\net7.0\lab_two.csproj.CoreCompileInputs.cache
+C:\4\cute_gang\homework\cs\lab_two\bin\Debug\net7.0\lab_two.exe
+C:\4\cute_gang\homework\cs\lab_two\bin\Debug\net7.0\lab_two.deps.json
+C:\4\cute_gang\homework\cs\lab_two\bin\Debug\net7.0\lab_two.runtimeconfig.json
+C:\4\cute_gang\homework\cs\lab_two\bin\Debug\net7.0\lab_two.dll
+C:\4\cute_gang\homework\cs\lab_two\bin\Debug\net7.0\lab_two.pdb
+C:\4\cute_gang\homework\cs\lab_two\obj\Debug\net7.0\lab_two.dll
+C:\4\cute_gang\homework\cs\lab_two\obj\Debug\net7.0\refint\lab_two.dll
+C:\4\cute_gang\homework\cs\lab_two\obj\Debug\net7.0\lab_two.pdb
+C:\4\cute_gang\homework\cs\lab_two\obj\Debug\net7.0\lab_two.genruntimeconfig.cache
+C:\4\cute_gang\homework\cs\lab_two\obj\Debug\net7.0\ref\lab_two.dll
