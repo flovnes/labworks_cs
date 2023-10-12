@@ -32,35 +32,11 @@ namespace LabTwo {
         static void block_2() {
             int count = 0, num;
             Console.WriteLine("[2 in ] Введення елементів");
-            do {
-                num = int.Parse(Console.ReadLine());
-                if (num % 2 == 1) {
-                    count++;
-                }
-            } while (num != 0);
-
-            switch (count) {
-                case int x when x is >= 11 and <= 14: 
-                    Console.WriteLine($"[2 out] Було введено {count} непарних чисел.");
-                    Console.WriteLine();
-                    break;
-                default:
-                    switch (count%10) {
-                        case 1: 
-                            Console.WriteLine($"[2 out] Було введено {count} непарне число.");
-                            Console.WriteLine();
-                            break;
-                        case int x when x is >= 2 and <= 4:
-                            Console.WriteLine($"[2 out] Було введено {count} непарних числа.");
-                            Console.WriteLine();
-                            break;
-                        default:
-                            Console.WriteLine($"[2 out] Було введено {count} непарних чисел.");
-                            Console.WriteLine();
-                            break;
-                    }
-                    break;
-            }            
+            while ((num = int.Parse(Console.ReadLine())) != 0) {
+                if (num % 2 == 1) { count++; }
+            }
+            Console.WriteLine($"[2 out] Було введено {count} непарних чисел.");
+            Console.WriteLine();       
         }
         static void block_3() {
             Console.WriteLine("[3 in ] Введення X");

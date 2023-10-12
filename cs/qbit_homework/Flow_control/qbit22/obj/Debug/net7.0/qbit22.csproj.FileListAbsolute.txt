@@ -1,0 +1,14 @@
+C:\4\cute_gang\homework\cs\qbit_homework\Flow_control\qbit22\bin\Debug\net7.0\qbit22.exe
+C:\4\cute_gang\homework\cs\qbit_homework\Flow_control\qbit22\bin\Debug\net7.0\qbit22.deps.json
+C:\4\cute_gang\homework\cs\qbit_homework\Flow_control\qbit22\bin\Debug\net7.0\qbit22.runtimeconfig.json
+C:\4\cute_gang\homework\cs\qbit_homework\Flow_control\qbit22\bin\Debug\net7.0\qbit22.dll
+C:\4\cute_gang\homework\cs\qbit_homework\Flow_control\qbit22\bin\Debug\net7.0\qbit22.pdb
+C:\4\cute_gang\homework\cs\qbit_homework\Flow_control\qbit22\obj\Debug\net7.0\qbit22.GeneratedMSBuildEditorConfig.editorconfig
+C:\4\cute_gang\homework\cs\qbit_homework\Flow_control\qbit22\obj\Debug\net7.0\qbit22.AssemblyInfoInputs.cache
+C:\4\cute_gang\homework\cs\qbit_homework\Flow_control\qbit22\obj\Debug\net7.0\qbit22.AssemblyInfo.cs
+C:\4\cute_gang\homework\cs\qbit_homework\Flow_control\qbit22\obj\Debug\net7.0\qbit22.csproj.CoreCompileInputs.cache
+C:\4\cute_gang\homework\cs\qbit_homework\Flow_control\qbit22\obj\Debug\net7.0\qbit22.dll
+C:\4\cute_gang\homework\cs\qbit_homework\Flow_control\qbit22\obj\Debug\net7.0\refint\qbit22.dll
+C:\4\cute_gang\homework\cs\qbit_homework\Flow_control\qbit22\obj\Debug\net7.0\qbit22.pdb
+C:\4\cute_gang\homework\cs\qbit_homework\Flow_control\qbit22\obj\Debug\net7.0\qbit22.genruntimeconfig.cache
+C:\4\cute_gang\homework\cs\qbit_homework\Flow_control\qbit22\obj\Debug\net7.0\ref\qbit22.dll
