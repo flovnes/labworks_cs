@@ -26,3 +26,17 @@ C:\4\cute_gang\homework\cs\homework_two\obj\Debug\net7.0\refint\cs.dll
 C:\4\cute_gang\homework\cs\homework_two\obj\Debug\net7.0\cs.pdb
 C:\4\cute_gang\homework\cs\homework_two\obj\Debug\net7.0\cs.genruntimeconfig.cache
 C:\4\cute_gang\homework\cs\homework_two\obj\Debug\net7.0\ref\cs.dll
+C:\4\cute_gang\homework\cs\lab_one\problem_three_ejudge\bin\Debug\net7.0\cs.exe
+C:\4\cute_gang\homework\cs\lab_one\problem_three_ejudge\bin\Debug\net7.0\cs.deps.json
+C:\4\cute_gang\homework\cs\lab_one\problem_three_ejudge\bin\Debug\net7.0\cs.runtimeconfig.json
+C:\4\cute_gang\homework\cs\lab_one\problem_three_ejudge\bin\Debug\net7.0\cs.dll
+C:\4\cute_gang\homework\cs\lab_one\problem_three_ejudge\bin\Debug\net7.0\cs.pdb
+C:\4\cute_gang\homework\cs\lab_one\problem_three_ejudge\obj\Debug\net7.0\cs.GeneratedMSBuildEditorConfig.editorconfig
+C:\4\cute_gang\homework\cs\lab_one\problem_three_ejudge\obj\Debug\net7.0\cs.AssemblyInfoInputs.cache
+C:\4\cute_gang\homework\cs\lab_one\problem_three_ejudge\obj\Debug\net7.0\cs.AssemblyInfo.cs
+C:\4\cute_gang\homework\cs\lab_one\problem_three_ejudge\obj\Debug\net7.0\cs.csproj.CoreCompileInputs.cache
+C:\4\cute_gang\homework\cs\lab_one\problem_three_ejudge\obj\Debug\net7.0\cs.dll
+C:\4\cute_gang\homework\cs\lab_one\problem_three_ejudge\obj\Debug\net7.0\refint\cs.dll
+C:\4\cute_gang\homework\cs\lab_one\problem_three_ejudge\obj\Debug\net7.0\cs.pdb
+C:\4\cute_gang\homework\cs\lab_one\problem_three_ejudge\obj\Debug\net7.0\cs.genruntimeconfig.cache
+C:\4\cute_gang\homework\cs\lab_one\problem_three_ejudge\obj\Debug\net7.0\ref\cs.dll

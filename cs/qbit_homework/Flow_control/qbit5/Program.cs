@@ -3,7 +3,6 @@ using System;
 class Program { 
     static void Main(string[] args) {
             string[] data = Console.ReadLine().Trim().Split();
-            Array.Sort(data);
             double a = double.Parse(data[0]);
             double b = double.Parse(data[1]);
             double c = double.Parse(data[2]);
