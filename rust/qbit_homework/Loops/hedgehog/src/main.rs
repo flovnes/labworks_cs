@@ -17,10 +17,10 @@ fn solution() {
     {
         match input_line().trim() {
             "R" => {
-                direction+=1;
+                direction = (direction + 1) % 4;
             },
             "L" => {
-                direction = (direction-1).abs();
+                direction = (direction + 3) % 4;
             },
             "F" => {
                 walk(&direction, &mut x, &mut y);
@@ -32,7 +32,7 @@ fn solution() {
 }
 
 fn walk(direction: &i16, x: &mut  i16, y: &mut i16) {
-    match direction%4 { 
+    match direction { 
         1 => {
             *y+=1;
         },
