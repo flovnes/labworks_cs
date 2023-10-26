@@ -11,9 +11,7 @@ fn input_line() -> String {
 
 fn solution() {
     let n: i16 = input_line().trim().parse().unwrap();
-    for current_number in 1..=n {
-        if current_number % 2 == 0  { 
-            print!("{} ", current_number)
-        }
+    for current_number in 1..=n/2 {
+        print!("{} ", current_number*2)
     }
 }
