@@ -5,7 +5,7 @@ fn main() {
     println!("Point B = ({};{})", a, b);
     let (area, point_c) = find_smallest_area((a,b));
     let (x,y) = point_c;
-    println!("The smallest area for triangle ABC is {area:0.01} units squared with coordinates A(0;0) B({a};{b}) C({x};{y})");
+    println!("The smallest area for triangle ABC is {area:0.01} units squared with vertices A(0;0) B({a};{b}) C({x};{y})");
 }
 
 fn input_line() -> String {
@@ -22,7 +22,7 @@ fn input_values() -> (i32,i32) {
     (values[0], values[1])
 }
 
-fn find_triangle_area(point_b: (i32, i32), point_c: (i32, i32)) -> f32 {
+fn triangle_area(point_b: (i32, i32), point_c: (i32, i32)) -> f32 {
     let (x_b,y_b) = point_b;
     let (x_c,y_c) = point_c;
     let area = ((x_b*y_c-x_c*y_b) as f32).abs()/2.0;
@@ -38,8 +38,8 @@ fn find_smallest_area(point_b: (i32, i32)) -> (f32, (i32, i32)) {
     let end = 0.max(a).max(b);
     for x in start..=end {
     for y in start..=end {
-        if x*b/a + 2 >= y && x*b/a - 2 <= y {
-            let cur_area = find_triangle_area((a,b), (x,y));
+        if (x*b/a - y).abs() <= 2 {
+            let cur_area = triangle_area((a,b), (x,y));
             if cur_area < min_area && cur_area > 0.0 { min_area = cur_area; point_c = (x,y) }
         }
     }

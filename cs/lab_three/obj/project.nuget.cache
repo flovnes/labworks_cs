@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "EOrIfen5rvmR7yiZx67kOT9rMYhOuwggHXpcehzqbAXZEZLM1FAzUzl4B5/+Fsqs7sS5WD7FkzpacqNPA29/rg==",
+  "success": true,
+  "projectFilePath": "/home/flov/4/cute_gang/homework/cs/lab_three/lab_three.csproj",
+  "expectedPackageFiles": [
+    "/home/flov/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.13/microsoft.aspnetcore.app.ref.7.0.13.nupkg.sha512"
+  ],
+  "logs": []
+}

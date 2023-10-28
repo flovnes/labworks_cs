@@ -1,0 +1,5 @@
+/home/flov/4/cute_gang/homework/cs/lab_three/obj/Debug/net7.0/lab_three.csproj.AssemblyReference.cache
+/home/flov/4/cute_gang/homework/cs/lab_three/obj/Debug/net7.0/lab_three.GeneratedMSBuildEditorConfig.editorconfig
+/home/flov/4/cute_gang/homework/cs/lab_three/obj/Debug/net7.0/lab_three.AssemblyInfoInputs.cache
+/home/flov/4/cute_gang/homework/cs/lab_three/obj/Debug/net7.0/lab_three.AssemblyInfo.cs
+/home/flov/4/cute_gang/homework/cs/lab_three/obj/Debug/net7.0/lab_three.csproj.CoreCompileInputs.cache
