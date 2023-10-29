@@ -20,21 +20,11 @@ class Program {
         return Math.Abs(Bx*Cy-By*Cx)/2.0;
     }
     static void FindSmallestArea(int Bx, int By, ref int Cx, ref int Cy, ref double minArea) {
-        if (Bx > 0) {
-            for (int x = 1; x < Bx/2; x++)
-            {
-                int y = (int)Math.Floor((double)By/(double)Bx*(double)x)+1;
-                double curArea = TriangleArea(Bx,By,x,y);
-                if (curArea < minArea) { minArea = curArea; Cx = x; Cy = y;}
-            }
-        } else {
-            for (int x = Bx/2; x--> 1;)
-            {
-                int y = (int)Math.Floor((double)By/(double)Bx*(double)x)+1;
-                double curArea = TriangleArea(Bx,By,x,y);
-                if (curArea < minArea) { minArea = curArea; Cx = x; Cy = y;}
-            }
+        for (int x = 0; Math.Abs(x) <= Math.Abs(Bx); x+=1*Math.Max(Math.Min(Bx,1),-1))
+        {
+            int y = (int)Math.Floor((double)By/(double)Bx*(double)x)+1;
+            double curArea = TriangleArea(Bx,By,x,y);
+            if (curArea < minArea) { minArea = curArea; Cx = x; Cy = y;}
         }
-
     }
 }
