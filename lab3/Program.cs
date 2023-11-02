@@ -22,10 +22,12 @@ class Program {
         long end = Math.Abs(Bx);
         long step = end/Bx;
         double ratio = (double)By/(double)Bx;
-        for (long x = 0; Math.Abs(x) <= end; x += step) {
+        long x = 0; 
+        while (Math.Abs(x) <= end) {
             long y = (long)Math.Floor(ratio * (double)x) + 1;
             double curArea = TriangleArea(Bx,By,x,y);
             if (curArea < minArea) { minArea = curArea; Cx = x; Cy = y; }
+            x += step;
         }
     }
 }
