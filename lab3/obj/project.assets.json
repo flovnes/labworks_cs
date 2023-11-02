@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Nick\\.nuget\\packages\\": {}
+    "/home/flov/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\4\\cute_gang\\labworks\\lab3\\lab3.csproj",
+      "projectUniqueName": "/home/flov/4/cutedotrs/labworks/lab3/lab3.csproj",
       "projectName": "lab3",
-      "projectPath": "C:\\4\\cute_gang\\labworks\\lab3\\lab3.csproj",
-      "packagesPath": "C:\\Users\\Nick\\.nuget\\packages\\",
-      "outputPath": "C:\\4\\cute_gang\\labworks\\lab3\\obj\\",
+      "projectPath": "/home/flov/4/cutedotrs/labworks/lab3/lab3.csproj",
+      "packagesPath": "/home/flov/.nuget/packages/",
+      "outputPath": "/home/flov/4/cutedotrs/labworks/lab3/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Nick\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/home/flov/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -54,12 +54,18 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[7.0.13, 7.0.13]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.113/RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "HiUm09XvRYAWSLOOreIkqpdPbo2I0mdcD3pKDkF5cHxw22ZtHDlySc1AjesyOuNll9XiU/fU3ouSCSoM1HWftw==",
+  "dgSpecHash": "eR39yIET99QGqqdJUssoHAcBvhzarVTATAtJfY88xsvA8Hui06421OzgBwu8i24+sUpCB4Z47i4jUOtyps79kQ==",
   "success": true,
-  "projectFilePath": "C:\\4\\cute_gang\\labworks\\lab3\\lab3.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/home/flov/4/cutedotrs/labworks/lab3/lab3.csproj",
+  "expectedPackageFiles": [
+    "/home/flov/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.13/microsoft.aspnetcore.app.ref.7.0.13.nupkg.sha512"
+  ],
   "logs": []
 }
