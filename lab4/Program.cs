@@ -3,67 +3,68 @@ using System.Text;
 using System.Diagnostics;
 using System.Text.RegularExpressions;
 
+#nullable disable
+
 class lab4
 {
     static void Main()
     {
-        FormatString();
+        Console.OutputEncoding = Encoding.UTF8;
+        Console.WriteLine("Введіть n: ");
+        int num = int.Parse(Console.ReadLine());
+        // Forward(num);
+        // Backwards(num);
+        ForwardBuilder(num);
+        BackwardsBuilder(num);
+        Console.WriteLine("Введіть рядок: ");
+        FormatString(Console.ReadLine());
     }
-    static void Forward() {
+
+    static void Forward(int num) {
         var sw = new Stopwatch();
-        Console.Write("Введіть n: ");
-        int end = int.Parse(Console.ReadLine());
         string str = new string(new char[]{});
 
         sw.Start();
-        for (int i = 1; i <= end; i++) {str += (i + " ");}
+        for (int i = 1; i <= num; i++) {str += (i + " ");}
         sw.Stop();
         // Console.WriteLine(str);
-        Console.WriteLine($"Completed \"Forward()\" for N = {end} in {sw.ElapsedMilliseconds}ms");
+        Console.WriteLine($"Completed \"Forward()\" for N = {num} in {sw.ElapsedMilliseconds}ms");
     }
 
-    static void Backwards() {
+    static void Backwards(int num) {
         var sw = new Stopwatch();
-        Console.Write("Введіть n: ");
-        int end = int.Parse(Console.ReadLine());
         string str = new string(new char[]{});
 
         sw.Start();
-        for (int i = end; i >= 1; i--) {str = i + " " + str;}
+        for (int i = num; i >= 1; i--) {str = i + " " + str;}
         sw.Stop();
         // Console.WriteLine(str);
-        Console.WriteLine($"Completed \"Backwards()\" for N = {end} in {sw.ElapsedMilliseconds}ms");
+        Console.WriteLine($"Completed \"Backwards()\" for N = {num} in {sw.ElapsedMilliseconds}ms");
     }
 
-        static void ForwardBuilder() {
+    static void ForwardBuilder(int num) {
         var sw = new Stopwatch();
-        Console.Write("Введіть n: ");
-        int end = int.Parse(Console.ReadLine());
         StringBuilder str = new StringBuilder();
 
         sw.Start();
-        for (int i = 1; i <= end; i++) {str.Append($"{i} ");}
+        for (int i = 1; i <= num; i++) {str.Append($"{i} ");}
         sw.Stop();
         // Console.WriteLine(str);
-        Console.WriteLine($"Completed \"ForwardBuilder()\" for N = {end} in {sw.ElapsedMilliseconds}ms");
+        Console.WriteLine($"Completed \"ForwardBuilder()\" for N = {num} in {sw.ElapsedMilliseconds}ms");
     }
 
-    static void BackwardsBuilder() {
+    static void BackwardsBuilder(int num) {
         var sw = new Stopwatch();
-        Console.Write("Введіть n: ");
-        int end = int.Parse(Console.ReadLine());
         StringBuilder str = new StringBuilder();
 
         sw.Start();
-        for (int i = end; i >= 1; i--) {str.Append($"{i} ");}
+        for (int i = num; i >= 1; i--) {str.Append($"{i} ");}
         sw.Stop();
         // Console.WriteLine(str);
-        Console.WriteLine($"Completed \"BackwardsBuilder()\" for N = {end} in {sw.ElapsedMilliseconds}ms");
+        Console.WriteLine($"Completed \"BackwardsBuilder()\" for N = {num} in {sw.ElapsedMilliseconds}ms");
     }
 
-    static void FormatString() {
-        Console.Write("Введіть рядок: ");
-        string str = Console.ReadLine();
+    static void FormatString(string str) {
         StringBuilder result_letters = new StringBuilder();
         StringBuilder result_numbers = new StringBuilder();
         foreach (char letter in str) {
