@@ -1,34 +1,31 @@
-﻿using System;
-using System.Text;
-using System.Diagnostics;
-using System.Text.RegularExpressions;
-
-#nullable disable
-
+﻿global using System.Text;
+global using System.Diagnostics;
+global using System.Text.RegularExpressions;
+global using System.Collections.Generic;
 class lab4
 {
     static void Main()
     {
         Console.OutputEncoding = Encoding.UTF8;
-        // Console.WriteLine("Введіть n: ");
-        // int num = int.Parse(Console.ReadLine());
-        // // Forward(num);
-        // // Backwards(num);
-        // ForwardBuilder(num);
-        // BackwardsBuilder(num);
-        // Console.WriteLine("Введіть рядок: ");
-        // FormatString(Console.ReadLine());
-        // Console.WriteLine("Введіть рядок: ");
-        // Console.WriteLine(compareSpaces(input, example));
-        // Console.WriteLine("Введіть рядок: ");
-        // Console.WriteLine(anagram(input, example));
-        // Console.WriteLine("Введіть рядок: ");
-        // Console.WriteLine(validateParentheses("((()))"));
-        // Console.WriteLine("Введіть рядок: ");
-        Console.WriteLine(findWords("Hello World, How are you dooing?", "d*i?g"));
-        // findWordsRegex("Hello World, How are you doing?", "H*o");
+        Console.WriteLine("1. Введіть n: ");
+        int num = int.Parse(Console.ReadLine());
+        Forward(num);
+        Backwards(num);
+        ForwardBuilder(num);
+        BackwardsBuilder(num);
+        Console.WriteLine("9. Фільтрування. Введіть рядок: ");
+        FormatString(Console.ReadLine());
+        Console.WriteLine("15. Формат. Введіть перший рядок, введіть другий рядок: ");
+        Console.WriteLine(CompareSpaces(Console.ReadLine(), Console.ReadLine()));
+        Console.WriteLine("16. Анаграми. Введіть перший рядок, введіть другий рядок: ");
+        Console.WriteLine(Anagram(Console.ReadLine(), Console.ReadLine()));
+        Console.WriteLine("17. Дужки. Введіть рядок: ");
+        Console.WriteLine(ValidateParentheses(Console.ReadLine()));
+        Console.WriteLine("18. Пошук. Введіть Введіть рядок та шаблон: ");
+        foreach (string word in FindWords(Console.ReadLine(), Console.ReadLine())) { Console.Write($"'{word}' "); }
+        Console.WriteLine("18(regex). Введіть рядок та шаблон: ");
+        foreach (Match match in FindWordsRegex(Console.ReadLine(), Console.ReadLine())) { Console.Write($"'{match.Value}' "); }
     }
-
     static void Forward(int num)
     {
         var sw = new Stopwatch();
@@ -37,7 +34,7 @@ class lab4
         sw.Start();
         for (int i = 1; i <= num; i++) { str += (i + " "); }
         sw.Stop();
-        // Console.WriteLine(str);
+
         Console.WriteLine($"Completed \"Forward()\" for N = {num} in {sw.ElapsedMilliseconds}ms");
     }
 
@@ -49,7 +46,7 @@ class lab4
         sw.Start();
         for (int i = num; i >= 1; i--) { str = i + " " + str; }
         sw.Stop();
-        // Console.WriteLine(str);
+
         Console.WriteLine($"Completed \"Backwards()\" for N = {num} in {sw.ElapsedMilliseconds}ms");
     }
 
@@ -61,7 +58,7 @@ class lab4
         sw.Start();
         for (int i = 1; i <= num; i++) { str.Append($"{i} "); }
         sw.Stop();
-        // Console.WriteLine(str);
+
         Console.WriteLine($"Completed \"ForwardBuilder()\" for N = {num} in {sw.ElapsedMilliseconds}ms");
     }
 
@@ -73,7 +70,7 @@ class lab4
         sw.Start();
         for (int i = num; i >= 1; i--) { str.Append($"{i} "); }
         sw.Stop();
-        // Console.WriteLine(str);
+
         Console.WriteLine($"Completed \"BackwardsBuilder()\" for N = {num} in {sw.ElapsedMilliseconds}ms");
     }
 
@@ -89,7 +86,7 @@ class lab4
         Console.WriteLine(result_letters.Append(result_numbers));
     }
 
-    static string compareSpaces(string input, string example)
+    static string CompareSpaces(string input, string example)
     {
         foreach (var (letterExample, letterInput) in example.Zip(input))
         {
@@ -101,7 +98,7 @@ class lab4
         return "YES";
     }
 
-    static string anagram(string input, string example)
+    static string Anagram(string input, string example)
     {
         input = input.ToLower();
         example = example.ToLower();
@@ -153,7 +150,7 @@ class lab4
         return new string(st.ToArray());
     }
 
-    static string validateParentheses(string input)
+    static string ValidateParentheses(string input)
     {
         var count = 0;
         foreach (var symbol in input)
@@ -177,49 +174,52 @@ class lab4
         return count == 0 ? "YES" : "NO";
     }
 
-    static string findWords(string input, string example)
+    static string[] FindWords(string input, string pattern)
     {
-        Regex.Replace(input, @"[^a-zA-Z ]", string.Empty);
-        var words = input.Trim().Split();
-        Console.WriteLine($"Words: {string.Join(", ", words)}");
+        string line = Regex.Replace(input, @"[^a-zA-Z ]", string.Empty);
+        var words = line.Trim().Split();
+        List<string> search = new List<string>();
+        Console.WriteLine($"Words to match: {string.Join(", ", words)}");
 
         foreach (var word in words)
         {
+            Console.WriteLine($"> word: {word}");
             var star = false;
             var temp = "";
-            var exampleI = 0;
+            var patternI = 0;
             var wordI = 0;
-
 
             while (wordI < word.Length)
             {
-                Console.WriteLine($"> Word: {word}");
 
-                Console.WriteLine($"Char: {exampleI + 1}, Max: {example.Length}");
+                Console.WriteLine($"symbol index: {patternI + 1}, word length: {pattern.Length}");
 
-                Console.WriteLine($"Example symbol: {example.Substring(exampleI, 1)}, Word symbol: {word.Substring(wordI, 1)}");
+                Console.WriteLine($"pattern symbol: {pattern.Substring(patternI, 1)}, word symbol: {word.Substring(wordI, 1)}");
 
 
-                if (exampleI == example.Length - 1)
+                if (patternI == pattern.Length - 1)
                 {
-                    return word;
+                    Console.WriteLine($"+ '{word}' added.");
+
+                    search.Add(word);
+                    break;
                 }
 
-                switch (example.Substring(exampleI, 1))
+                switch (pattern.Substring(patternI, 1))
                 {
                     case "?":
-                        Console.WriteLine("Found '?'");
-                        Console.WriteLine($"Word symbol: {word.Substring(wordI, 1)}");
+                        Console.WriteLine("'?' found");
+                        Console.WriteLine($"symbol: {word.Substring(wordI, 1)}");
                         break;
                     case "*":
                         if (star)
                         {
-                            Console.WriteLine("Still in '*'");
-                            Console.WriteLine($"Word symbol: {word.Substring(wordI, 1)}");
+                            Console.WriteLine("'*' ->");
+                            Console.WriteLine($"symbol: {word.Substring(wordI, 1)}");
                             if (temp != word.Substring(wordI, 1))
                             {
-                                Console.WriteLine("Unmatched symbol. Star matching ends.");
-                                exampleI++;
+                                Console.WriteLine("  Unmatched symbol. Star matching ends.");
+                                patternI++;
                                 star = false;
                                 continue;
                             }
@@ -231,44 +231,42 @@ class lab4
                         }
                         else
                         {
-                            Console.WriteLine("Found '*'");
+                            Console.WriteLine("'*' found");
                             star = true;
                             temp = word.Substring(wordI, 1);
-                            Console.WriteLine($"Saving temp: {temp}");
+                            Console.WriteLine($"  saving temp: {temp}");
                         }
                         wordI++;
                         continue;
                     default:
-                        if (example.Substring(exampleI, 1) != word.Substring(wordI, 1))
+                        if (pattern.Substring(patternI, 1) != word.Substring(wordI, 1))
                         {
-                            exampleI++;
+                            patternI++;
                             wordI++;
-                            Console.WriteLine("Unmatched symbol, skipping word.");
+                            Console.WriteLine("- Unmatched symbol. Skipping word.");
                             goto exit_loop;
                             // break;
                         }
                         break;
                 }
-                exampleI++;
+                patternI++;
                 wordI++;
-                // break;
             }
         exit_loop:;
         }
-
-        return "No matches found";
+        switch (search.Count)
+        {
+            case 0: Console.WriteLine("No matches found :("); break;
+            default: Console.WriteLine($"Found {search.Count} matches in:\n   '{input}'"); break;
+        }
+        return search.ToArray();
     }
-    static void findWordsRegex(string input, string example)
+    static MatchCollection FindWordsRegex(string input, string example)
     {
         var search = new Regex(example.Replace("?", ".").Replace("*", "(\\w)*"));
-        var result = search.Match(input);
-        if (result.Success)
-        {
-            Console.WriteLine(result.Value);
-        }
-        else
-        {
-            Console.WriteLine("No matches found.");
-        }
+        var result = search.Matches(input);
+        Console.WriteLine($"Found {result.Count} matches in:\n   {input}");
+        Console.WriteLine($"Matched words: ");
+        return result;
     }
 }
