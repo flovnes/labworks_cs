@@ -136,7 +136,7 @@ class lab4
 
     static string ValidateParentheses(string input)
     {
-        var count = 0;
+        int count = 0;
         foreach (var symbol in input)
         {
             switch (symbol)
