@@ -1,4 +1,6 @@
 ## Running 
-Type `dotnet run` in terminal
+Type `cargo run` in terminal
 ## Visualisation
-Desmos: [Click here](https://www.desmos.com/calculator/rkjkil4tag)
+Lab 3: [[desmos]](https://www.desmos.com/calculator/rkjkil4tag)
+
+Lab 4: [[spreadsheet]](https://docs.google.com/spreadsheets/d/1Tz4xn4uW8jGzRDlHmhonCcbgRKqYpOzYi2N3lpmzcLE/edit?usp=sharing)
