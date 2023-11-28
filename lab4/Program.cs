@@ -1,26 +1,27 @@
-﻿global using System.Text;
-global using System.Diagnostics;
-global using System.Text.RegularExpressions;
-global using System.Collections.Generic;
-class lab4
+﻿using System.Text;
+using System.Diagnostics;
+using System.Text.RegularExpressions;
+using System.Collections.Generic;
+
+public class lab4
 {
     static void Main()
     {
         Console.OutputEncoding = Encoding.UTF8;
-        // Console.WriteLine("1. Введіть n: ");
-        // int num = int.Parse(Console.ReadLine());
-        // Forward(num);
-        // Backwards(num);
-        // ForwardBuilder(num);
-        // BackwardsBuilder(num);
-        // Console.WriteLine("9. Фільтрування. Введіть рядок: ");
-        // FormatString(Console.ReadLine());
-        // Console.WriteLine("15. Формат. Введіть перший рядок, введіть другий рядок: ");
-        // Console.WriteLine(CompareSpaces(Console.ReadLine(), Console.ReadLine()));
-        // Console.WriteLine("16. Анаграми. Введіть перший рядок, введіть другий рядок: ");
-        // Console.WriteLine(Anagram(Console.ReadLine(), Console.ReadLine()));
-        // Console.WriteLine("17. Дужки. Введіть рядок: ");
-        // Console.WriteLine(ValidateParentheses(Console.ReadLine()));
+        Console.WriteLine("1. Введіть n: ");
+        int num = int.Parse(Console.ReadLine());
+        Forward(num);
+        Backwards(num);
+        ForwardBuilder(num);
+        BackwardsBuilder(num);
+        Console.WriteLine("9. Фільтрування. Введіть рядок: ");
+        FormatString(Console.ReadLine());
+        Console.WriteLine("15. Формат. Введіть перший рядок, введіть другий рядок: ");
+        Console.WriteLine(CompareSpaces(Console.ReadLine(), Console.ReadLine()));
+        Console.WriteLine("16. Анаграми. Введіть перший рядок, введіть другий рядок: ");
+        Console.WriteLine(Anagram(Console.ReadLine(), Console.ReadLine()));
+        Console.WriteLine("17. Дужки. Введіть рядок: ");
+        Console.WriteLine(ValidateParentheses(Console.ReadLine()));
         Console.WriteLine("18. Пошук. Введіть Введіть рядок та шаблон: ");
         foreach (string word in FindWords(Console.ReadLine(), Console.ReadLine())) { Console.Write($"'{word}' "); }
         Console.WriteLine("\n18(regex). Введіть рядок та шаблон: ");
@@ -76,14 +77,15 @@ class lab4
 
     static void FormatString(string str)
     {
-        string result_letters;
-        string result_numbers;
+        StringBuilder result_letters = new StringBuilder();
+        StringBuilder result_numbers = new StringBuilder();
         foreach (char letter in str)
         {
             if (Char.ToLower(letter) >= 'a' && Char.ToLower(letter) <= 'z') { result_letters.Append(letter); }
             if (letter >= '0' && letter <= '9') { result_numbers.Append(letter); }
         }
-        Console.WriteLine(result_letters.Append(result_numbers));
+        Console.WriteLine($"{result_letters}{result_numbers}");
+        Console.ReadLine();
     }
 
     static string CompareSpaces(string input, string example)
