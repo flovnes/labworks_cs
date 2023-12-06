@@ -8,24 +8,24 @@ public class lab4
     static void Main()
     {
         Console.OutputEncoding = Encoding.UTF8;
-        Console.WriteLine("1. Введіть n: ");
-        int num = int.Parse(Console.ReadLine());
-        Forward(num);
-        Backwards(num);
-        ForwardBuilder(num);
-        BackwardsBuilder(num);
-        Console.WriteLine("9. Фільтрування. Введіть рядок: ");
-        FormatString(Console.ReadLine());
-        Console.WriteLine("15. Формат. Введіть перший рядок, введіть другий рядок: ");
-        Console.WriteLine(CompareSpaces(Console.ReadLine(), Console.ReadLine()));
-        Console.WriteLine("16. Анаграми. Введіть перший рядок, введіть другий рядок: ");
-        Console.WriteLine(Anagram(Console.ReadLine(), Console.ReadLine()));
-        Console.WriteLine("17. Дужки. Введіть рядок: ");
-        Console.WriteLine(ValidateParentheses(Console.ReadLine()));
+        // Console.WriteLine("1. Введіть n: ");
+        // int num = int.Parse(Console.ReadLine());
+        // Forward(num);
+        // Backwards(num);
+        // ForwardBuilder(num);
+        // BackwardsBuilder(num);
+        // Console.WriteLine("9. Фільтрування. Введіть рядок: ");
+        // FormatString(Console.ReadLine());
+        // Console.WriteLine("15. Формат. Введіть перший рядок, введіть другий рядок: ");
+        // Console.WriteLine(CompareSpaces(Console.ReadLine(), Console.ReadLine()));
+        // Console.WriteLine("16. Анаграми. Введіть перший рядок, введіть другий рядок: ");
+        // Console.WriteLine(Anagram(Console.ReadLine(), Console.ReadLine()));
+        // Console.WriteLine("17. Дужки. Введіть рядок: ");
+        // Console.WriteLine(ValidateParentheses(Console.ReadLine()));
         Console.WriteLine("18. Пошук. Введіть Введіть рядок та шаблон: ");
         foreach (string word in FindWords(Console.ReadLine(), Console.ReadLine())) { Console.Write($"'{word}' "); }
-        Console.WriteLine("\n18(regex). Введіть рядок та шаблон: ");
-        foreach (Match match in FindWordsRegex(Console.ReadLine(), Console.ReadLine())) { Console.Write($"'{match.Value}' "); }
+        // Console.WriteLine("\n18(regex). Введіть рядок та шаблон: ");
+        // foreach (Match match in FindWordsRegex(Console.ReadLine(), Console.ReadLine())) { Console.Write($"'{match.Value}' "); }
     }
     static void Forward(int num)
     {
@@ -221,6 +221,25 @@ public class lab4
                     }
                     else
                     {
+                        if (pattern[patternIndex+1] == '?') {
+                          int lettersNeeded = (pattern.Length - 1) ;
+                          wordIndex = word.Length - lettersNeeded;
+                          if (wordIndex + 1 <= word.Length && wordIndex>=0) {
+                            Console.WriteLine($"      :jumped to the {word[wordIndex]}");
+                            patternIndex++;
+                            break;
+                          } else {
+                            Console.WriteLine($"      :word is too short, skipping word.");
+                            return false;
+                          }
+                          // 01234567   = 8
+                          // *z*?zovv     
+                          // i(?)       = 3
+                          // letNeed    = (8-1) - 3 = 4
+                          // 0 = 1
+                          // v
+                          // i(v)       =  
+                        }
                         int indexOfLastNext = FindLast(word, pattern[patternIndex + 1]);
                         if (indexOfLastNext != -1)
                         {
@@ -233,8 +252,9 @@ public class lab4
                         {
                             Console.WriteLine(
                                 $"      :no matches for {pattern[patternIndex + 1]} found. skipping word");
-                            break;
+                            return false;
                         }
+                      
                     }
                     break;
                 default:
