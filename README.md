@@ -1,5 +1,9 @@
+
+## Check out
+[labworks_rust](https://github.com/flovnes/labworks_rust) for corroded solutions
+
 ## Running 
-Type `cargo run` in terminal
+Type `dotnet run` in terminal
 ## Visualisation
 Lab 3: [[desmos]](https://www.desmos.com/calculator/rkjkil4tag)
 
