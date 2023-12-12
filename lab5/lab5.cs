@@ -1,5 +1,6 @@
 ﻿using System.Text;
 using System.Globalization;
+using System.Diagnostics.Metrics;
 
 #nullable disable
 
@@ -26,7 +27,6 @@ namespace LabOne
                             printArray(array);
                             break;
                         default:
-                            Console.WriteLine($"Введіть кількість елементів:");
                             array = inputArray();
                             printArray(array);
                             break;
@@ -81,15 +81,19 @@ namespace LabOne
             }
             Console.WriteLine($"\"");
         }
-        static int solution(int[] array)
+        static float solution(int[] array)
         {
             int aqqum = 0, max = 0, min = 0;
-            for (int i = 0; i < array.Length; i++)
+            for (int i = array.Length - 1; i >= 0; i--)
             {
-                if (array[i] >= array[max]) { max = i; }
-                if (array[i] <= array[min]) { min = i; }
+                if (array[i] > array[max]) { max = i; }
+                if (array[i] < array[min]) { min = i; }
             }
             if (max < min) { (min, max) = (max, min); }
+
+            Console.WriteLine($"Найбільший елемент: {array[max]}");
+            Console.WriteLine($"Найменший елемент: {array[min]}");
+
             Console.Write($"Виділені елементи: \" ");
             for (int i = min; i <= max; i++)
             {
@@ -98,7 +102,7 @@ namespace LabOne
             }
             Console.WriteLine($"\"");
 
-            return aqqum;
+            return (float)aqqum / (max - min + 1);
         }
     }
 }
