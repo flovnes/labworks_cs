@@ -38,7 +38,18 @@ namespace LabOne
                     printArray(array);
                     break;
             }
+            float avg = solution(array);
+            if (avg != 0) { Console.WriteLine($"Середнє арифметичне: {avg}"); }
+            else
+            {
+              Console.WriteLine($"Виділений діапазон пустий");
+            }
             Console.WriteLine($"{solution(array)}");
+            Console.WriteLine($"PopBalloons input:");
+            // string result = PopBalloonsCasual(Console.ReadLine().Trim());
+            // Console.WriteLine($"pop casual = \"{result}\"");
+            string result = PopBalloons(Console.ReadLine().Trim());
+            Console.WriteLine($"pop = \"{result}\"");
         }
         static int[] randomArray(int size)
         {
@@ -93,16 +104,63 @@ namespace LabOne
 
             Console.WriteLine($"Найбільший елемент: {array[max]}");
             Console.WriteLine($"Найменший елемент: {array[min]}");
-
-            Console.Write($"Виділені елементи: \" ");
-            for (int i = min; i <= max; i++)
-            {
-                Console.Write($"{array[i]} ");
-                aqqum += array[i];
+            if (max-min>2) {
+              Console.Write($"Виділені елементи: \" ");
+              for (int i = min + 1; i < max; i++)
+              {
+                  Console.Write($"{array[i]} ");
+                  aqqum += array[i];
+              }
+              Console.WriteLine($"\"");
+            } else {
+              return 0;
             }
-            Console.WriteLine($"\"");
 
             return (float)aqqum / (max - min + 1);
+        }
+        // static string PopBalloonsCasual(string balloons) {
+        //   do {
+        //     for (int i = 0, j = i; i < balloons.Length; i++)
+        //     {
+        //       int count = 0;
+        //       while(j<balloons.Length && balloons[i]==balloons[j]) {count++; j++;}
+        //       if (count>=3) {
+        //         balloons = balloons.Substring(0, i) + balloons.Substring(j);
+        //       }
+        //     }
+        //   } while (!check(balloons));
+        //    return balloons;
+        // }
+        // static bool check(string balloons) {
+        //   for (int i = 0, j = i; i < balloons.Length; i++)
+        //   {
+        //     int count = 0;
+        //     while(j<balloons.Length && balloons[i]==balloons[j]) {count++; j++;}
+        //     if (count>=3) {
+        //       return false;
+        //     }
+        //   }
+        //   return true;
+        // }
+        static string PopBalloons(string balloons) {
+          int prev = 0;
+          for (int start = 0; start < balloons.Length; start++)
+          {
+            int cur = start, count = 0;
+            while(cur < balloons.Length && balloons[start]==balloons[cur]) {count++; cur++;}
+            if (count>=3) {
+              System.Console.WriteLine($"deleted {balloons.Substring(start, cur-start)}");
+              balloons = balloons.Substring(0, start) + balloons.Substring(cur);
+              System.Console.WriteLine($"current {balloons}");
+              if (start - 1 >= 0) {
+                System.Console.WriteLine($"moved Start from {start} to {start-1}");
+                cur = start;
+                do { cur--; } while (cur > 0 && balloons[start] == balloons[cur]);
+                start = cur;
+              }
+            }
+          }
+          return balloons;
         }
     }
 }

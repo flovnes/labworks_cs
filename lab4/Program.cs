@@ -175,7 +175,7 @@ public class lab4
 
         for (int index = 0; index < words.Count; index++)
         {
-            Console.WriteLine($"[{index + 1}/{words.Count}] Word: {words[index]}");
+            Console.WriteLine($"[{index + 1}/{words.Count}] Word: {words[index]+1}");
 
             if (CheckWord(words[index].ToCharArray(), pattern.ToCharArray()))
             {
@@ -202,9 +202,7 @@ public class lab4
         int wordIndex = 0, patternIndex = 0;
         while (wordIndex < word.Length)
         {
-            Console.WriteLine(
-                $"    ({patternIndex + 1}/{pattern.Length}) Expected: {pattern[patternIndex]}, got: {word[wordIndex]}");
-
+            Console.WriteLine($"    Pattern[{patternIndex + 1}] = {pattern[patternIndex]}");
             switch (pattern[patternIndex])
             {
                 case '?':
@@ -222,29 +220,22 @@ public class lab4
                     else
                     {
                         if (pattern[patternIndex+1] == '?') {
-                          int lettersNeeded = (pattern.Length - 1) ;
+                          int lettersNeeded = (pattern.Length - patternIndex) -1;
                           wordIndex = word.Length - lettersNeeded;
                           if (wordIndex + 1 <= word.Length && wordIndex>=0) {
-                            Console.WriteLine($"      :jumped to the {word[wordIndex]}");
+                            Console.WriteLine($"      :jumped to the {word[wordIndex]} ({wordIndex})");
                             patternIndex++;
                             break;
                           } else {
                             Console.WriteLine($"      :word is too short, skipping word.");
                             return false;
                           }
-                          // 01234567   = 8
-                          // *z*?zovv     
-                          // i(?)       = 3
-                          // letNeed    = (8-1) - 3 = 4
-                          // 0 = 1
-                          // v
-                          // i(v)       =  
                         }
                         int indexOfLastNext = FindLast(word, pattern[patternIndex + 1]);
                         if (indexOfLastNext != -1)
                         {
                             Console.WriteLine(
-                                $"      :jumped to the last occurrence of {pattern[patternIndex + 1]}");
+                                $"      'find_last':jumped to the last occurrence of {pattern[patternIndex + 1]}");
                             wordIndex = indexOfLastNext;
                             patternIndex++;
                         }
@@ -260,6 +251,7 @@ public class lab4
                 default:
                     if (pattern[patternIndex] == word[wordIndex])
                     {
+                        Console.WriteLine($"    Word[{wordIndex + 1}]    = {word[wordIndex]}");
                         patternIndex++;
                         wordIndex++;
                     }
@@ -286,7 +278,7 @@ public class lab4
         int last = -1;
         for (int letterIndex = 0; letterIndex < word.Length; letterIndex++)
         {
-            Console.WriteLine($"      'find_last': comparing {word[letterIndex]} to {letter}");
+            // Console.WriteLine($"      'find_last': comparing {word[letterIndex]} to {letter}");
             if (word[letterIndex] == letter)
             {
                 Console.WriteLine($"      'find_last': last index of {letter} is {letterIndex}");
