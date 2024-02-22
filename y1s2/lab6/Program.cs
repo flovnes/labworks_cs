@@ -68,7 +68,6 @@
 
   private static double MaxAreaTriangle(double[] arr, out int i) {
     arr = sort_double(arr);
-    // print_array(arr);
     for (i = arr.Length-1; i > 2; i--)
     {
       double a=arr[i], b=arr[i-1], c=arr[i-2];
