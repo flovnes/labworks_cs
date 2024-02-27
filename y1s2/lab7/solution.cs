@@ -61,33 +61,37 @@ namespace Solution {
     }
 
     public static void Four() {
-      string[] temp = System.Console.ReadLine().Split();
-      int length = int.Parse(temp[0]), height = int.Parse(temp[1]);
-      int[][] matrix = new int[height][];
-      System.Console.WriteLine($"\nInput a matrix {length}x{height}:");
+      int[] temp = Array.ConvertAll(System.Console.ReadLine().Split(), int.Parse);
+      int height = temp[0], length = temp[1];
+      int[][] input_matrix = new int[height][];
+      int[][] matrix = new int[length][];
+      int[] nc = new int[length];
+      System.Console.WriteLine($"\nInput a input_matrix {height}x{length}:");
 
-      for (int i = 0; i < length; i++) {
-        temp = System.Console.ReadLine().Split();
-        matrix[i] = new int[height];
-      }
-      for (int i = 0; i < length; i++) {
-        for (int j = 0; j < height; j++) {
-          matrix[j][i] = int.Parse(temp[j]);
+      for (int i = 0; i < height; i++) {
+        temp = Array.ConvertAll(System.Console.ReadLine().Split(), int.Parse);
+        input_matrix[i] = new int[length];
+        for (int j = 0; j < length; j++) {
+          input_matrix[i][j] = temp[j];
         }
       }
 
-      // count 0's
-      int[] nc = new int[length];
+      for (int i = 0; i < length; i++) {
+        matrix[i] = new int[height];
+        for (int j = 0; j < height; j++) {
+          matrix[i][j] = input_matrix[j][i]; 
+        }
+      }
+
       for (int i = 0; i < length; i++) {
         for (int j = 0; j < height; j++) {
           if (matrix[i][j]==0) nc[i]++;
         }
       }
       
-      // sort rows
       SortRows(matrix, nc);
-
       System.Console.WriteLine("Resulting matrix:");
+
       for (int i = 0; i < height; i++) {
         for (int j = 0; j < length; j++) {
           System.Console.Write($"{matrix[j][i],2} ");
@@ -97,13 +101,11 @@ namespace Solution {
     }
 
     public static int[][] SortRows(int[][] matrix, int[] nc) {
-      int length = matrix.GetLength(0);
-      for (int i = 1; i < length; i++)
-      {
+      int height = matrix.GetLength(0);
+      for (int i = 1; i < height; i++) {
         int[] t = matrix[i];
         int t_nc = nc[i];
-        for (int j = i-1; j >= 0;)
-        {
+        for (int j = i-1; j >= 0;) {
           if (t_nc < nc[j]) {
             nc[j+1] = nc[j];
             nc[j] = t_nc;

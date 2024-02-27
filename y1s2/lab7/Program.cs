@@ -27,7 +27,7 @@ public class Program {
     // Solution.Block2();
     // System.Console.WriteLine("block one, input square matrix:");
     // Solution.Block3();
-    System.Console.Write("block two, input matrix sizes (<w> <l>): ");
+    System.Console.Write("block two, input matrix sizes (<h> <l>): ");
     Solution.Block.Four();
   }
 }
