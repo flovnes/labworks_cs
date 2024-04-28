@@ -1,0 +1,6 @@
+/tests/bin
+/tests/obj
+/src/bin
+/src/obj
+.vscode
+*.sln
