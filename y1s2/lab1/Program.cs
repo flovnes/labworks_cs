@@ -54,13 +54,10 @@
     holes = sort(holes);
     bridges = sort(bridges);
     for (int i = holes.Length-1; i>=0; i--) {
-      for (int j = bridges.Length-1-counter; j>=0; j--)
-      {
-        if (bridges[j]>holes[i]) {
-          counter++;
-          System.Console.WriteLine($"міст '{bridges[j]}' -> яма '{holes[i]}'");
-          break;
-        }
+      if (bridges[j]>holes[i]) {
+        counter++;
+        System.Console.WriteLine($"міст '{bridges[i]}' -> яма '{holes[i]}'");
+        break;
       }
     }
     Console.WriteLine($"\nМаксимальна кількість перекритих прогалин: {counter}");
@@ -79,9 +76,9 @@
     return 0.0;
   }
 
-  private static void CountTriangles(double[] arr) {
-    int counter = 0;
+  private static void Solution(double[] arr) {
     arr = sort_double(arr);
+    double max = 0.0;
     for (int i = arr.Length - 1; i >= 2 ; i--)
     {
       for (int j = i-1; j >= 1 ; j--)
@@ -89,13 +86,15 @@
         for (int k = j-1; k >= 0 ; k--)
         {
           if (arr[i]-arr[j]-arr[k] < 0) {
-            Console.WriteLine($"-> ({arr[i]}, {arr[j]}, {arr[k]})");
-            counter++;
+            double area = Area(arr[i],arr[j],arr[k];
+            if (Area(arr[i],arr[j],arr[k]) > max) {
+              max = Area(arr[i],arr[j],arr[k];
+            }
           }
         }
       }   
     }
-    Console.WriteLine($"\nКількість різних невироджених трикутників: {counter}");
+    Console.WriteLine(max);
   }
   
   private static void build(int[] arr, int n)

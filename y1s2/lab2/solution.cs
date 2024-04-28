@@ -110,6 +110,7 @@ namespace Solution {
         int temp_valuesList = valuesList[i];
         int[] temp = matrix[i];
         int j = i-1;
+
         while (j>=0 && valuesList[j] > temp_valuesList) {
             valuesList[j+1] = valuesList[j];
             matrix[j+1] = matrix[j];
@@ -120,25 +121,5 @@ namespace Solution {
         matrix[j+1] = temp;
       }
     }
-
-    // public static void TrMatrix(int[][] input_matrix) {
-    //   int height = input_matrix.GetLength(0);
-    //   int length = input_matrix.GetLength(1);
-    //   int[][] matrix = new int[length][];
-    //   for (int i = 0; i < length; i++) {
-    //     matrix[i] = new int[height];
-    //     for (int j = 0; j < height; j++) {
-    //       matrix[i][j] = input_matrix[j][i]; 
-    //     }
-    //   }
-    //   input_matrix = matrix;
-    // }
-    //
-    // public static void SortMatrixByValue(int[][] matrix) {
-    //   int[] valuesList;
-    //   TrMatrix(matrix);
-    //   EvaluateRows(matrix, out valuesList);
-    //   SortRows();
-    // }
   }
 }
