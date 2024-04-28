@@ -18,8 +18,8 @@ jobs:
       with:
         dotnet-version: 8.0.x
     - name: Restore dependencies
-      run: dotnet restore ./tests/
+      run: dotnet restore ./y1s2/lab4/tests
     - name: Build
-      run: dotnet build ./src/  && dotnet build ./tests/  
+      run: dotnet build ./y1s2/lab4/src  && dotnet build ./y1s2/lab4/tests  
     - name: Test
-      run: dotnet test --no-build --verbosity normal ./tests
+      run: dotnet test --no-build --verbosity normal ./y1s2/lab4/tests
