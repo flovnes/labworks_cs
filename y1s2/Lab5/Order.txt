@@ -1,0 +1,4 @@
+Sender: 1
+Receiver: 2
+Sum of transaction: 0 грн 3 коп
+
