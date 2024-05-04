@@ -1,1 +1,12 @@
-[43] 2, час відправлення: 3
+Name: Nazar
+Number: 1
+Sum of transaction: 12:30
+
+Name: SashaZ
+Number: 2
+Sum of transaction: 15:20
+
+Name: PRO100VLAD
+Number: 3
+Sum of transaction: 11:00
+

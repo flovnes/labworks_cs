@@ -18,9 +18,10 @@ namespace lab5_serialization {
       TimeOfDeparture = fields[2];
     }
 
-		public override readonly string ToString() {
-			return $"[{Number}] {Name}, час відправлення: {TimeOfDeparture}";
-		}
+    public override readonly string ToString()
+    {
+      return $"Name: {Name}\nNumber: {Number}\nSum of transaction: {TimeOfDeparture}\n";
+    }
 
 		public readonly int CompareTo(Train other) {
 			return (Number > other.Number) ? 1 : -1;
